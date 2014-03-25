@@ -14,10 +14,11 @@ Gem::Specification.new do |s|
   s.description = 'Description of OmniauthMv.'
   s.license     = 'MIT'
 
-  s.files = Dir["{app,config,db,lib}/**/*", 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
-  s.test_files = Dir['test/**/*']
+  s.files = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   s.add_dependency 'rails', '~> 4.1.0.rc1'
+  s.add_runtime_dependency 'omniauth', '~> 1.1'
 
   s.add_development_dependency 'sqlite3'
 end
