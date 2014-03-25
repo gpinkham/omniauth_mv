@@ -1,2 +1,2 @@
-module OmniauthMv
-end
+require 'omniauth_mv/version'
+require 'omniauth/strategies/mv'
