@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  s.add_dependency 'rails', '~> 4.1.0.rc1'
+  s.add_dependency 'rails', '~> 4.2.0.rc1'
   s.add_runtime_dependency 'omniauth', '~> 1.1'
 
   s.add_development_dependency 'sqlite3'
